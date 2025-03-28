@@ -17,9 +17,7 @@ body{
 	border-radius: 10px;
 	box-shadow: 5px 20px 50px #000;
 }
-#chk{
-	display: none;
-}
+
 .signup{
 	position: relative;
 	width:100%;
@@ -67,27 +65,20 @@ button{
 button:hover{
 	background: #6d44b8;
 }
-.login{
-	height: 460px;
-	background: #eee;
-	border-radius: 60% / 10%;
-	transform: translateY(-180px);
-	transition: .8s ease-in-out;
-}
+.login {
+    background: #eee;
+    border-radius: 10px;
+    padding: 30px 0;
+    transition: 0.3s ease-in-out;
+    margin-top: 40px; /* 👈 Aquí bajas el bloque */
+  }
+  
+  
 .login label{
 	color: #573b8a;
 	transform: scale(.6);
 }
 
-#chk:checked ~ .login{
-	transform: translateY(-500px);
-}
-#chk:checked ~ .login label{
-	transform: scale(1);	
-}
-#chk:checked ~ .signup label{
-	transform: scale(.6);
-}
 
 /**/
 .account-type-selector {
